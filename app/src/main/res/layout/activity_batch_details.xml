@@ -1,0 +1,290 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="341dp"
+            android:layout_height="583dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="40dp"
+
+            android:layout_marginRight="2dp"
+            android:background="@drawable/rounded_corners">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="467dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_corners"
+                android:layout_alignParentLeft="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="344dp"
+                    android:layout_height="88dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/c1logo" />
+
+                <TextView
+                    android:id="@+id/bid"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/image"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_alignParentRight="true"
+
+                    android:linksClickable="true"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/batchtype"
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="135dp"
+                    android:layout_marginEnd="-6dp"
+                    android:layout_marginRight="-6dp"
+                    android:fontFamily="@font/aclonica"
+                    android:linksClickable="true"
+                    android:text="batchtype"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/fee"
+                    android:layout_width="98dp"
+                    android:layout_height="40dp"
+                    android:layout_alignTop="@+id/batchfee"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/aclonica"
+                    android:linksClickable="true"
+                    android:text="fee"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/batchtiming"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/batchtime2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/aclonica"
+                    android:linksClickable="true"
+                    android:text="batchtiming"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/agegroup"
+                    android:layout_width="139dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="173dp"
+                    android:layout_marginEnd="-5dp"
+                    android:layout_marginRight="-5dp"
+                    android:fontFamily="@font/aclonica"
+                    android:linksClickable="true"
+                    android:text="agegroup"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="123dp"
+                    android:layout_height="38dp"
+                    android:layout_alignTop="@+id/batchtype"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginLeft="33dp"
+                    android:fontFamily="@font/aclonica"
+                    android:text="Batch Type :"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/batchfee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="41dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="263dp"
+                    android:fontFamily="@font/aclonica"
+                    android:text="Fee to be paid :"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/batchtime2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignStart="@+id/textView3"
+                    android:layout_alignLeft="@+id/textView3"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="211dp"
+                    android:fontFamily="@font/aclonica"
+                    android:text="Batch Time :"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_alignStart="@+id/textView3"
+                    android:layout_alignLeft="@+id/textView3"
+                    android:layout_alignTop="@+id/agegroup"
+                    android:fontFamily="@font/aclonica"
+                    android:text="Age  Group :"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="95dp"
+                    android:layout_height="33dp"
+                    android:layout_below="@+id/fee"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="22dp"
+                    android:fontFamily="@font/aclonica"
+                    android:gravity="start"
+                    android:text="Duration :"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="99dp"
+                    android:layout_height="33dp"
+                    android:layout_alignEnd="@+id/batchtime2"
+                    android:layout_alignRight="@+id/batchtime2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="-4dp"
+                    android:layout_marginRight="-4dp"
+                    android:layout_marginBottom="28dp"
+                    android:fontFamily="@font/aclonica"
+                    android:text="End Date :"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_alignEnd="@+id/batchtime2"
+                    android:layout_alignRight="@+id/batchtime2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="-2dp"
+                    android:layout_marginRight="-2dp"
+                    android:layout_marginBottom="80dp"
+                    android:fontFamily="@font/aclonica"
+                    android:text="Start Date :"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/batchstart"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/batchtype"
+                    android:layout_alignLeft="@+id/batchtype"
+                    android:layout_alignTop="@+id/textView5"
+                    android:fontFamily="@font/aclonica"
+                    android:text="batchstart"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/batchend"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/batchtype"
+                    android:layout_alignLeft="@+id/batchtype"
+                    android:layout_alignTop="@+id/textView4"
+                    android:fontFamily="@font/aclonica"
+                    android:text="batchend"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="33dp"
+                    android:layout_height="39dp"
+                    android:layout_alignStart="@+id/batchtype"
+                    android:layout_alignLeft="@+id/batchtype"
+                    android:layout_alignTop="@+id/fee"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="-1dp"
+                    android:text="@string/Rs"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/viewRegistration"
+                android:layout_width="161dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="22dp"
+                android:background="@drawable/oval"
+                android:text="View Profile"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/registerbatch"
+                android:layout_width="153dp"
+                android:layout_height="36dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="81dp"
+                android:background="@drawable/oval"
+                android:text="Register"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_marginTop="660dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="@color/blue">
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</ScrollView>

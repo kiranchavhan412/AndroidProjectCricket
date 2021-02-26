@@ -1,0 +1,74 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="15dp"
+
+            android:clipToPadding="true"
+            app:cardBackgroundColor="@color/green1"
+            app:cardCornerRadius="15dp">
+
+
+<!--            <com.denzcoskun.imageslider.ImageSlider-->
+<!--                android:id="@+id/slider"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="210dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                app:auto_cycle="true"-->
+<!--                app:corner_radius="0"-->
+<!--                app:delay="0"-->
+<!--                app:error_image="@drawable/image1"-->
+<!--                app:period="1000"-->
+<!--                app:placeholder="@drawable/image1">-->
+
+<!--            </com.denzcoskun.imageslider.ImageSlider>-->
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/scroller1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_weight="3"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/allerta"
+            android:singleLine="true"
+            android:text="Select batch according to your agegroup"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#063903"
+            android:layout_alignParentLeft="true" />
+
+
+        <TextView
+            android:id="@+id/mytext"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:text="Hey What's your age group?"
+            android:textColor="@color/green1"
+            android:textSize="24sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" />
+
+
+
+    </LinearLayout>
+</ScrollView>
